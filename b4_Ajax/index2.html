@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee {
+            constructor(code,fistName,lastName,salary) {
+                this.code = code
+                this.fistName = fistName;
+                this.lastName = lastName;
+                this.salary = salary;
+            }
+            getFullname(){
+                return this.fistName + ' '+ this.lastName;
+            }
+            getSalary(){
+                return this.salary;
+            }
+            getAnualSaraly(){
+                return this.salary*12;
+            }
+            raiseSalary(percent){
+                return this.salary += percent*this.salary / 100;
+            }
+        }
+        class ParttimeEmployee extends Employee{
+            
+        }
+        let employee = new Employee('NV123','Long','Bui',2000);
+        console.log(employee.getFullname())
+        console.log(employee.getSalary())
+        console.log(employee.getAnualSaraly())
+        employee.raiseSalary(10);
+        console.log(employee.getSalary())
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let email_1 = "ab@yahoo.com";
+        // let email_2 = "@#abc@gmail.com";
+
+        // console.log(is_email(email_1));
+        // console.log(is_email(email_2));
+       
+        // function is_email(str) {
+        //     regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+
+        //     if (regexp.test(str)) {
+        //         return true;
+        //     }
+        //     return false;
+        // }
+
+        console.log(is_valid_account("123abc_"));
+        console.log(is_valid_account("12345"));
+
+        function is_valid_account(str){
+            regexp = /^[_a-z0-9]{6,}$/;
+            if(regexp.test(str)){
+                return true;
+            }
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>

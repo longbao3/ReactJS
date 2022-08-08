@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(18, 115, 200);
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/4308937/pexels-photo-4308937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: 50%;
+}
+a{
+    display: block;
+}
+iframe{
+    margin: auto;
+    display: block;
+}
