@@ -10,18 +10,20 @@
 
 <body>
     <script>
+        let email_1 = "ab@yahoo.com";
+        let email_2 = "@#abc@gmail.com";
 
-        console.log(is_valid_account("123abc_"));
-        console.log(is_valid_account("12345"));
+        console.log(is_email(email_1));
+        console.log(is_email(email_2));
 
-        function is_valid_account(str){
-            regexp = /^[_a-z0-9]{6,}$/;
-            if(regexp.test(str)){
+        function is_email(str) {
+            regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+
+            if (regexp.test(str)) {
                 return true;
             }
             return false;
         }
-
     </script>
 </body>
 
